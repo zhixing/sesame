@@ -1,9 +1,9 @@
 * { margin:0; padding:0; }
 body {
-	background-color: #FFFFFF;
+	background-color: #c6c6c6;
 }
 #page {
-	background-color: #FFFFFF;
+	background-color: #c6c6c6;
 }
 #skip-link {
 	width: 960px;
@@ -13,17 +13,18 @@ body {
 }
 #header {
 	width: 960px;
-	background:url(../images/header.jpg);
+	background-color:#000;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: auto;
-	height: 100px;
-	font: 500% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	margin-top: 10px;
+	height: 90px;
+	padding-top: 10px;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
 }
 #logo {
 	float: left;
 	margin-left: 20px;
-	margin-top: 20px;
 }
 a#logo {
 	text-decoration: none;
