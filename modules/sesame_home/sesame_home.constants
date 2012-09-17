@@ -1,0 +1,4 @@
+<?php
+// Tables
+define('SESAME_TABLE', 'sesame_table');
+

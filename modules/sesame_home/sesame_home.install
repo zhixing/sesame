@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Schema and requirement definitions for the fy_case_activity module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function sesame_home_install() {
+	// Create some tables.
+	// Add some basic contents to the table
+	drupal_set_message('Sesame Home Successfully Installed');
+}
+
+
+/**
+ * Implements hook_schema().
+ */
+function sesame_home_schema() {
+ 
+	//return $schema;
+ }
+ 
+/**
+ * Implements hook_uninstall().
+ */
+ function fy_case_activity_uninstall() {
+ 	// Delete tables...
+ }
+
+ 

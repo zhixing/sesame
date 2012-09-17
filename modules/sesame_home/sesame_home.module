@@ -1,0 +1,57 @@
+<?PHP
+
+function sesame_home_menu(){
+
+	
+	$items['sesame_home'.'/what'] = array(
+	    'title' => 'What\'s SeSaMe',
+	    'page callback' => 'drupal_get_form',	    
+	    'page arguments' => array('sesame_home_what_form'),
+	    'file' => 'sesame_home_what_form.inc',
+	    'access callback' => 'user_access',
+	    'access arguments' => array('administer users'),
+		'type' => MENU_CALLBACK
+  	);
+
+  	$items['sesame_home'.'/news'] = array(
+	    'title' => 'News',
+	    'page callback' => 'drupal_get_form',
+	    'page arguments' => array('sesame_home_news_form'),
+	    'access callback' => 'user_access',
+	    'access arguments' => array('administer users'),
+	    'file' => 'sesame_home_news_form.inc',
+		'type' => MENU_CALLBACK
+  	);
+
+  	$items['sesame_home'.'/milestone'] = array(
+	    'title' => 'Milestone',
+	    'page callback' => 'drupal_get_form',
+	    'page arguments' => array('sesame_home_milestone_form'),
+	    'access callback' => 'user_access',
+	    'access arguments' => array('administer users'),
+	    'file' => 'sesame_home_milestone_form.inc',
+		'type' => MENU_CALLBACK
+  	);
+
+  	$items['sesame_home'.'/people'] = array(
+	    'title' => 'People',
+	    'page callback' => 'drupal_get_form',
+	    'page arguments' => array('sesame_home_people_form'),
+	    'access callback' => 'user_access',
+	    'access arguments' => array('administer users'),
+	    'file' => 'sesame_home_people_form.inc',
+		'type' => MENU_CALLBACK
+  	);
+
+  	$items['sesame_home'.'/about'] = array(
+	    'title' => 'About',
+	    'page callback' => 'drupal_get_form',
+	    'page arguments' => array('sesame_home_about_form'),
+	    'access callback' => 'user_access',
+	    'access arguments' => array('administer users'),
+	    'file' => 'sesame_home_about_form.inc',
+		'type' => MENU_CALLBACK
+  	);
+
+  	return $items;
+}

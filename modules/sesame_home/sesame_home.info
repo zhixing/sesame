@@ -1,0 +1,8 @@
+; $Id$
+
+name = Sesame Home Page
+description = Sesame home page and the five modules
+core = 7.x
+version = 7.x-1.0-alpha0
+package = Sesame
+
