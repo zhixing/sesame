@@ -1,4 +1,7 @@
-* { margin:0; padding:0; }
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
 	background-color: #FFFFFF;
 }
@@ -13,7 +16,7 @@ body {
 }
 #header {
 	width: 960px;
-	background:url(../images/header.jpg);
+	background: url(../images/header.jpg);
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: auto;
@@ -36,7 +39,7 @@ a#logo {
 	text-decoration: none;
 }
 #navigation {
-	alignment-adjust:central;
+	alignment-adjust: central;
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
@@ -44,7 +47,7 @@ a#logo {
 	height: 30px;
 }
 #navigation h2 {
-display: none;
+	display: none;
 }
 ul#main-menu {
 	height: 25px;
@@ -55,8 +58,8 @@ ul#main-menu {
 }
 /*导航栏的文字*/
 ul#main-menu li a {
-	alignment-adjust:central;
-	color:#FFFFFF;
+	alignment-adjust: central;
+	color: #FFFFFF;
 	text-decoration: none;
 	padding-right: 10px;
 }
@@ -71,41 +74,41 @@ ul#secondary-menu li a {
 	border-right: 1px solid #fff;
 }
 ul#secondary-menu a:hover {
-color: #ff0000;
+	color: #ff0000;
 }
 #main-wrapper {
-clear: both;
-background-color: #ffffff;
-width: 960px;
-margin-right: auto;
-margin-left: auto;
+	clear: both;
+	background-color: #ffffff;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
 }
 #main {
-width: 960px;
-margin: 5px auto;
+	width: 960px;
+	margin: 5px auto;
 }
 #content {
-width: 775px;
-float: right;
-padding-left: 15px;
+	width: 775px;
+	float: right;
+	padding-left: 15px;
 }
 #sidebar-first {
-float: left;
-width: 130px;
-margin:0;
-padding: 20px;
-background-color: #EEE;
+	float: left;
+	width: 130px;
+	margin: 0;
+	padding: 20px;
+	background-color: #EEE;
 }
 #footer {
-width: 920px;
-padding: 20px;
-margin-right: auto;
-margin-left: auto;
-clear: both;
-min-height: 100px;
-background-color: #333;
-color: #fff;
+	width: 920px;
+	padding: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	min-height: 100px;
+	background-color: #333;
+	color: #fff;
 }
 #footer a {
-color: #fff;
+	color: #fff;
 }
