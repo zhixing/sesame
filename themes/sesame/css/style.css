@@ -1,14 +1,22 @@
-* {
+/* {
 	margin: 0;
 	padding: 0;
-}
+}*/
 body {
 	background-color: #FFFFFF;
 }
 #page {
-	background-color: #FFFFFF;
+	/*background-color: #646464;*/
 }
-#skip-link {
+#top-bar {
+	background: url(../images/top-bar-bg.png) repeat;
+	height: 50px;
+	width: 960px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*#skip-link {
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
@@ -56,7 +64,7 @@ ul#main-menu {
 	text-decoration: none;
 	padding-top: 5px;
 }
-/*导航栏的文字*/
+
 ul#main-menu li a {
 	alignment-adjust: central;
 	color: #FFFFFF;
@@ -112,3 +120,4 @@ ul#secondary-menu a:hover {
 #footer a {
 	color: #fff;
 }
+*/
