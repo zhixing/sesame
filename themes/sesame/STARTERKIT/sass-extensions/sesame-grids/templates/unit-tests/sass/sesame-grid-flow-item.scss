@@ -1,0 +1,60 @@
+/**
+ * @file
+ * Test sesame-grid-flow-item()
+ */
+
+@import "sesame";
+
+#test-sesame-grid-flow-item {
+  /* Test sesame-grid-flow-item(1) without setting $column-count */
+  @include sesame-grid-flow-item(1);
+
+  /* Test sesame-grid-flow-item(1, 4) with 12 column grid and 20px gutter */
+  @include sesame-grid-flow-item(1, 4);
+
+  /* Test sesame-grid-flow-item(1, 4) with 15px gutter */
+  $sesame-gutter-width: 15px;
+  @include sesame-grid-flow-item(1, 4);
+  $sesame-gutter-width: 20px;
+
+  /* Test sesame-grid-flow-item(1, 4) with 15px gutter and $sesame-float-direction: right */
+  $sesame-gutter-width: 15px;
+  $sesame-float-direction: right;
+  @include sesame-grid-flow-item(1, 4);
+  $sesame-gutter-width: 20px;
+  $sesame-float-direction: left;
+
+  /* Test sesame-grid-flow-item(1, 4) with 15px gutter and $alpha-gutter: true */
+  $sesame-gutter-width: 15px;
+  @include sesame-grid-flow-item(1, 4, $alpha-gutter: true);
+  $sesame-gutter-width: 20px;
+
+  /* Test sesame-grid-flow-item(1, 4) with 15px gutter and $omega-gutter: false */
+  $sesame-gutter-width: 15px;
+  @include sesame-grid-flow-item(1, 4, $omega-gutter: false);
+  $sesame-gutter-width: 20px;
+
+  /* Test sesame-grid-flow-item(3, 4) with 20px gutter and $alpha-gutter: true */
+  @include sesame-grid-flow-item(3, 4, $alpha-gutter: true);
+
+  /* Test sesame-grid-flow-item(3, 4) with 20px gutter and $omega-gutter: false */
+  @include sesame-grid-flow-item(3, 4, $omega-gutter: false);
+
+  /* Test sesame-grid-flow-item(1, 4) with 15px gutter, $sesame-float-direction: right and $alpha-gutter: true */
+  $sesame-gutter-width: 15px;
+  $sesame-float-direction: right;
+  @include sesame-grid-flow-item(1, 4, $alpha-gutter: true);
+  $sesame-gutter-width: 20px;
+  $sesame-float-direction: left;
+
+  /* Test sesame-grid-flow-item(1, 4) with $sesame-box-sizing: content-box and 10% gutter */
+  $sesame-gutter-width: 10%;
+  $sesame-box-sizing: content-box;
+  @include sesame-grid-flow-item(1, 4);
+  $sesame-gutter-width: 20px;
+  $sesame-box-sizing: border-box;
+
+  /* Test sesame-grid-flow-item(1, 4) with $sesame-auto-include-flow-item-base: false */
+  $sesame-auto-include-flow-item-base: false;
+  @include sesame-grid-flow-item(1, 4);
+}

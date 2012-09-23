@@ -1,0 +1,54 @@
+/**
+ * @file
+ * Test sesame-grid-item-base()
+ */
+
+@import "sesame";
+
+#test-sesame-grid-item-base {
+  /* Test sesame-grid-item-base() */
+  @include sesame-grid-item-base();
+
+  /* Test sesame-grid-item-base() with $sesame-box-sizing: content-box */
+  $sesame-box-sizing: content-box;
+  @include sesame-grid-item-base();
+  $sesame-box-sizing: border-box;
+
+  /* Test sesame-grid-item-base() with $legacy-support-for-ie7: true */
+  $legacy-support-for-ie7: true;
+  @include sesame-grid-item-base();
+  $legacy-support-for-ie7: false;
+
+  /* Test sesame-grid-item-base() with $box-sizing-polyfill-path: "/boxsizing.htc" and $legacy-support-for-ie7: true */
+  $box-sizing-polyfill-path: "/boxsizing.htc";
+  $legacy-support-for-ie7: true;
+  @include sesame-grid-item-base();
+  $box-sizing-polyfill-path: "";
+  $legacy-support-for-ie7: false;
+
+  /* Test sesame-grid-item-base() with $box-sizing-polyfill-path: "/boxsizing.htc" and $legacy-support-for-ie6: true */
+  $box-sizing-polyfill-path: "/boxsizing.htc";
+  $legacy-support-for-ie6: true;
+  @include sesame-grid-item-base();
+  $box-sizing-polyfill-path: "";
+  $legacy-support-for-ie6: false;
+
+  /* Test sesame-grid-item-base() with $sesame-gutter-width: 15px */
+  $sesame-gutter-width: 15px;
+  @include sesame-grid-item-base();
+  $sesame-gutter-width: 20px;
+
+  /* Test sesame-grid-item-base() with $sesame-gutter-width: 15px and $sesame-float-direction: right */
+  $sesame-gutter-width: 15px;
+  $sesame-float-direction: right;
+  @include sesame-grid-item-base();
+  $sesame-gutter-width: 20px;
+  $sesame-float-direction: left;
+
+  /* Test sesame-grid-item-base() with $sesame-gutter-width: 15px and $sesame-reverse-all-floats: true */
+  $sesame-gutter-width: 15px;
+  $sesame-reverse-all-floats: true;
+  @include sesame-grid-item-base();
+  $sesame-gutter-width: 20px;
+  $sesame-reverse-all-floats: false;
+}

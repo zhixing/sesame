@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Test sesame-clear()
+ */
+/* line 8, ../sass/sesame-clear.scss */
+#test-sesame-clear {
+  /* Test sesame-clear() */
+  clear: left;
+  /* Test sesame-clear() with $sesame-float-direction: right */
+  clear: right;
+  /* Test sesame-clear(left) */
+  clear: left;
+  /* Test sesame-clear(left, $reverse-all-floats: TRUE) */
+  clear: right;
+  /* Test sesame-clear(left) with: $sesame-reverse-all-floats: TRUE; */
+  clear: right;
+}

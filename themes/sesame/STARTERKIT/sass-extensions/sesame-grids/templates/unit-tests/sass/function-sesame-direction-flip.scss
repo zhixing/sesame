@@ -1,0 +1,23 @@
+/**
+ * @file
+ * Test sesame-direction-flip()
+ */
+
+@import "sesame";
+
+#test-sesame-direction-flip {
+  /* Test sesame-direction-flip(left) */
+  float: sesame-direction-flip(left);
+
+  /* Test sesame-direction-flip(right) */
+  float: sesame-direction-flip(right);
+
+  /* Test sesame-direction-flip(both) */
+  float: sesame-direction-flip(both);
+
+  /* Test sesame-direction-flip(none) */
+  float: sesame-direction-flip(none);
+
+  /* Test sesame-direction-flip(invalid) */
+  float: sesame-direction-flip(invalid);
+}

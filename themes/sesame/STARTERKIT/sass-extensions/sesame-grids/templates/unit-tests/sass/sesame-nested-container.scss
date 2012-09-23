@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Test sesame-nested-container()
+ */
+
+@import "sesame";
+
+#test-sesame-nested-container {
+  /* Test sesame-nested-container() */
+  @include sesame-nested-container();
+}
+
+#test-sesame-nested-container-2 {
+  /* Test sesame-nested-container() with $legacy-support-for-ie7: true */
+  $legacy-support-for-ie7: true;
+  @include sesame-nested-container();
+  $legacy-support-for-ie7: false;
+}
+
+#test-sesame-nested-container-3 {
+  /* Test sesame-nested-container() with $legacy-support-for-ie6: true */
+  $legacy-support-for-ie6: true;
+  $legacy-support-for-ie7: true;
+  @include sesame-nested-container();
+  $legacy-support-for-ie6: false;
+  $legacy-support-for-ie7: false;
+}

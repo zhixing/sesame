@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Test sesame-unit-width()
+ */
+/* line 8, ../sass/function-sesame-unit-width.scss */
+#test-sesame-unit-width {
+  /* Test sesame-unit-width() with default $sesame-column-count: 1 */
+  width: 100%;
+  /* Test sesame-unit-width() with $sesame-column-count: 5 */
+  width: 20%;
+  /* Test sesame-unit-width(5) */
+  width: 20%;
+  /* Test sesame-unit-width() with $sesame-grid-width: 100px */
+  width: 100px;
+  /* Test sesame-unit-width(5) with $sesame-grid-width: 100px */
+  width: 20px;
+  /* Test sesame-unit-width(5, 100px) */
+  width: 20px;
+}

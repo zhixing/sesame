@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Test sesame-grid-container()
+ */
+
+@import "sesame";
+
+#test-sesame-grid-container {
+  /* Test sesame-grid-container() */
+  @include sesame-grid-container();
+}
+
+#test-sesame-grid-container-2 {
+  /* Test sesame-grid-container() with $legacy-support-for-ie7: true */
+  $legacy-support-for-ie7: true;
+  @include sesame-grid-container();
+  $legacy-support-for-ie7: false;
+}
+
+#test-sesame-grid-container-3 {
+  /* Test sesame-grid-container() with $legacy-support-for-ie6: true */
+  $legacy-support-for-ie6: true;
+  $legacy-support-for-ie7: true;
+  @include sesame-grid-container();
+  $legacy-support-for-ie6: false;
+  $legacy-support-for-ie7: false;
+}

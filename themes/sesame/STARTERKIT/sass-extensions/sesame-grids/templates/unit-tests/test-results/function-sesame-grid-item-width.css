@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Test sesame-grid-item-width()
+ */
+/* line 8, ../sass/function-sesame-grid-item-width.scss */
+#test-sesame-grid-item-width {
+  /* Test sesame-grid-item-width(1) with default $sesame-column-count: 1 */
+  width: 100%;
+  /* Test sesame-grid-item-width(2) with $sesame-column-count: 5 */
+  width: 40%;
+  /* Test sesame-grid-item-width(2, 5) */
+  width: 40%;
+  /* Test sesame-grid-item-width(1) with $sesame-grid-width: 100px */
+  width: 100px;
+  /* Test sesame-grid-item-width(2, 5) with $sesame-grid-width: 100px */
+  width: 40px;
+  /* Test sesame-grid-item-width(2, 5, 100px) */
+  width: 40px;
+}

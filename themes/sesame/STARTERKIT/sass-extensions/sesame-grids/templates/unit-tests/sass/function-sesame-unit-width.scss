@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Test sesame-unit-width()
+ */
+
+@import "sesame";
+
+#test-sesame-unit-width {
+  /* Test sesame-unit-width() with default $sesame-column-count: 1 */
+  width: sesame-unit-width();
+
+  /* Test sesame-unit-width() with $sesame-column-count: 5 */
+  $sesame-column-count: 5;
+  width: sesame-unit-width();
+  $sesame-column-count: 1;
+
+  /* Test sesame-unit-width(5) */
+  width: sesame-unit-width(5);
+
+  /* Test sesame-unit-width() with $sesame-grid-width: 100px */
+  $sesame-grid-width: 100px;
+  width: sesame-unit-width();
+  $sesame-grid-width: 100%;
+
+  /* Test sesame-unit-width(5) with $sesame-grid-width: 100px */
+  $sesame-grid-width: 100px;
+  width: sesame-unit-width(5);
+  $sesame-grid-width: 100%;
+
+  /* Test sesame-unit-width(5, 100px) */
+  width: sesame-unit-width(5, 100px);
+}

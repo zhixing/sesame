@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Test sesame-direction-flip()
+ */
+/* line 8, ../sass/function-sesame-direction-flip.scss */
+#test-sesame-direction-flip {
+  /* Test sesame-direction-flip(left) */
+  float: right;
+  /* Test sesame-direction-flip(right) */
+  float: left;
+  /* Test sesame-direction-flip(both) */
+  float: both;
+  /* Test sesame-direction-flip(none) */
+  float: none;
+  /* Test sesame-direction-flip(invalid) */
+  float: both;
+}

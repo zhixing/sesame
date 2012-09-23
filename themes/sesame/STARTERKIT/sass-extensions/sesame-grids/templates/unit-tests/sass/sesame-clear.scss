@@ -1,0 +1,26 @@
+/**
+ * @file
+ * Test sesame-clear()
+ */
+
+@import "sesame";
+
+#test-sesame-clear {
+  /* Test sesame-clear() */
+  @include sesame-clear();
+
+  /* Test sesame-clear() with $sesame-float-direction: right */
+  $sesame-float-direction: right;
+  @include sesame-clear();
+  $sesame-float-direction: left;
+
+  /* Test sesame-clear(left) */
+  @include sesame-clear(left);
+
+  /* Test sesame-clear(left, $reverse-all-floats: TRUE) */
+  @include sesame-clear(left, $reverse-all-floats: TRUE);
+
+  /* Test sesame-clear(left) with: $sesame-reverse-all-floats: TRUE; */
+  $sesame-reverse-all-floats: TRUE;
+  @include sesame-clear(left);
+}

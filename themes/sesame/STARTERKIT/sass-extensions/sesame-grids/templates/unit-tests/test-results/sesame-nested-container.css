@@ -1,0 +1,24 @@
+/**
+ * @file
+ * Test sesame-nested-container()
+ */
+/* line 8, ../sass/sesame-nested-container.scss */
+#test-sesame-nested-container {
+  /* Test sesame-nested-container() */
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 13, ../sass/sesame-nested-container.scss */
+#test-sesame-nested-container-2 {
+  /* Test sesame-nested-container() with $legacy-support-for-ie7: true */
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 20, ../sass/sesame-nested-container.scss */
+#test-sesame-nested-container-3 {
+  /* Test sesame-nested-container() with $legacy-support-for-ie6: true */
+  padding-left: 0;
+  padding-right: 0;
+}

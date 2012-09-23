@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Test sesame-grid-item-width()
+ */
+
+@import "sesame";
+
+#test-sesame-grid-item-width {
+  /* Test sesame-grid-item-width(1) with default $sesame-column-count: 1 */
+  width: sesame-grid-item-width(1);
+
+  /* Test sesame-grid-item-width(2) with $sesame-column-count: 5 */
+  $sesame-column-count: 5;
+  width: sesame-grid-item-width(2);
+  $sesame-column-count: 1;
+
+  /* Test sesame-grid-item-width(2, 5) */
+  width: sesame-grid-item-width(2, 5);
+
+  /* Test sesame-grid-item-width(1) with $sesame-grid-width: 100px */
+  $sesame-grid-width: 100px;
+  width: sesame-grid-item-width(1);
+  $sesame-grid-width: 100%;
+
+  /* Test sesame-grid-item-width(2, 5) with $sesame-grid-width: 100px */
+  $sesame-grid-width: 100px;
+  width: sesame-grid-item-width(2, 5);
+  $sesame-grid-width: 100%;
+
+  /* Test sesame-grid-item-width(2, 5, 100px) */
+  width: sesame-grid-item-width(2, 5, 100px);
+}

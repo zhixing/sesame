@@ -1,0 +1,57 @@
+/**
+ * @file
+ * Test sesame-grid-item()
+ */
+
+@import "sesame";
+
+#test-sesame-grid-item {
+  /* Test sesame-grid-item(6, 4) with 12 column grid and 20px gutter */
+  $sesame-column-count: 12;
+  @include sesame-grid-item(6, 4);
+
+  /* Test sesame-grid-item(3, 3) with box-sizing: content-box, 5 column grid and 10% gutter */
+  $sesame-column-count: 5;
+  $sesame-gutter-width: 10%;
+  $sesame-box-sizing: content-box;
+  @include sesame-grid-item(3, 3);
+  $sesame-box-sizing: border-box;
+
+  /* Turn off $sesame-auto-include-item-base */
+  $sesame-auto-include-item-base: false;
+
+  /* Test sesame-grid-item(3, 3) with 5 column grid and 40px gutter */
+  $sesame-column-count: 5;
+  $sesame-gutter-width: 40px;
+  @include sesame-grid-item(3, 3);
+
+  /* Test sesame-grid-item(3, 3, right) with 5 column grid and 40px gutter */
+  $sesame-column-count: 5;
+  $sesame-gutter-width: 40px;
+  @include sesame-grid-item(3, 3, right);
+
+  /* Test sesame-grid-item(3, 3) with 5 column grid and 40px gutter and $sesame-reverse-all-floats */
+  $sesame-column-count: 5;
+  $sesame-gutter-width: 40px;
+  $sesame-reverse-all-floats: true;
+  @include sesame-grid-item(3, 3);
+  $sesame-reverse-all-floats: false;
+
+  /* Test sesame-grid-item(3, 3, right) with 5 column grid and 40px gutter and $sesame-reverse-all-floats */
+  $sesame-column-count: 5;
+  $sesame-gutter-width: 40px;
+  $sesame-reverse-all-floats: true;
+  @include sesame-grid-item(3, 3, right);
+  $sesame-reverse-all-floats: false;
+
+  /* Test sesame-grid-item(3, 2.5) with 5 column grid and 40px gutter */
+  $sesame-column-count: 5;
+  $sesame-gutter-width: 40px;
+  @include sesame-grid-item(3, 2.5);
+
+  /* Test sesame-grid-item(3, 3) with $sesame-grid-width: 1000px, 5 column grid and 40px gutter */
+  $sesame-grid-width: 1000px;
+  $sesame-column-count: 5;
+  $sesame-gutter-width: 40px;
+  @include sesame-grid-item(3, 3);
+}

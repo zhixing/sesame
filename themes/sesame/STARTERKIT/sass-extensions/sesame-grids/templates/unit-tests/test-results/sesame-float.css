@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Test sesame-float()
+ */
+/* line 8, ../sass/sesame-float.scss */
+#test-sesame-float {
+  /* Test sesame-float() */
+  float: left;
+  /* Test sesame-float() with $sesame-float-direction: right */
+  float: right;
+  /* Test sesame-float(left) */
+  float: left;
+  /* Test sesame-float(left, $reverse-all-floats: TRUE) */
+  float: right;
+  /* Test sesame-float(left) with: $sesame-reverse-all-floats: TRUE; */
+  float: right;
+}

@@ -1,0 +1,26 @@
+/**
+ * @file
+ * Test sesame-float()
+ */
+
+@import "sesame";
+
+#test-sesame-float {
+  /* Test sesame-float() */
+  @include sesame-float();
+
+  /* Test sesame-float() with $sesame-float-direction: right */
+  $sesame-float-direction: right;
+  @include sesame-float();
+  $sesame-float-direction: left;
+
+  /* Test sesame-float(left) */
+  @include sesame-float(left);
+
+  /* Test sesame-float(left, $reverse-all-floats: TRUE) */
+  @include sesame-float(left, $reverse-all-floats: TRUE);
+
+  /* Test sesame-float(left) with: $sesame-reverse-all-floats: TRUE; */
+  $sesame-reverse-all-floats: TRUE;
+  @include sesame-float(left);
+}

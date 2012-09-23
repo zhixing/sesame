@@ -1,0 +1,37 @@
+/**
+ * @file
+ * Test sesame-half-gutter()
+ */
+
+@import "sesame";
+
+#test-sesame-half-gutter {
+  /* Test sesame-half-gutter() with default $sesame-gutter-width: 20px */
+  padding-left: sesame-half-gutter();
+
+  /* Test sesame-half-gutter() with $sesame-gutter-width: 30px */
+  $sesame-gutter-width: 30px;
+  padding-left: sesame-half-gutter();
+
+  /* Test sesame-half-gutter(10em) */
+  padding-left: sesame-half-gutter(10em);
+
+  /* Test sesame-half-gutter(11em) */
+  padding-left: sesame-half-gutter(11em);
+
+  /* Test sesame-half-gutter(10px) */
+  padding-left: sesame-half-gutter(10px);
+
+  /* Test sesame-half-gutter(11px) */
+  padding-left: sesame-half-gutter(11px);
+
+  /* Test sesame-half-gutter(11px, right) */
+  padding-left: sesame-half-gutter(11px, right);
+
+  /* Test sesame-half-gutter(11px) with $sesame-float-direction: right */
+  $sesame-float-direction: right;
+  padding-left: sesame-half-gutter(11px);
+
+  /* Test sesame-half-gutter(11px, left) with $sesame-float-direction: right */
+  padding-left: sesame-half-gutter(11px, left);
+}
