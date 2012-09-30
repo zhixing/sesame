@@ -463,11 +463,12 @@ ul,
 .item-list ul li { /* Drupal override */
   float: left;
   margin-left: 30px;
-  margin-top: -15px;
+  margin-top: 17px;
   
 }
 
 dd {
+	
   margin: 0 0 0 30px; /* LTR */
 }
 
@@ -602,6 +603,7 @@ textarea {
 button,
 input {
   line-height: normal; /* 1 */
+
 }
 
 /*
