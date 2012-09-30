@@ -8,7 +8,9 @@
   margin: 1.5em 0;
 }
 
-.form-item input.error,
+.form-item input {
+	float:left;
+}
 .form-item textarea.error,
 .form-item select.error { /* Highlight the form elements that caused a form submission error */
   border: 1px solid #c00;
@@ -17,6 +19,10 @@
 .form-item label { /* The label for a form element */
   display: block;
   font-weight: bold;
+  color: #FFFF00;
+  float: left;
+  margin-left: 10px;
+  margin-right: 2px;
 }
 
 .form-item label.option { /* The label for a radio button or checkbox */
@@ -26,6 +32,7 @@
 
 .form-required { /* The part of the label that indicates a required field */
   color: #c00;
+  display: none;
 }
 
 .form-item .description { /* The descriptive help text (separate from the label) */
@@ -76,6 +83,7 @@ a.button { /* Buttons used by contrib modules like Media */
 
 #user-login-form {
   text-align: left; /* LTR */
+ 
 }
 
 /*
@@ -85,9 +93,9 @@ a.button { /* Buttons used by contrib modules like Media */
  * styling of list items.
  */
 
-#user-login-form ul { /* OpenID creates a new ul above the login form's links. */
-  margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
-}
+/*#user-login-form ul {*//* OpenID creates a new ul above the login form's links. */
+/*  margin-bottom: 0;*/ /* Position OpenID's ul next to the rest of the links. */
+/*}*/
 
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link { /* The "Log in using OpenID" link. */

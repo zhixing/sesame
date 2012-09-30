@@ -73,7 +73,11 @@
   </div>
 <div id="page">
 
-  <div id="top_bar"><?php print render($page['top_bar']); ?></div>
+  <div id="top_bar">
+  	<?php print render($page['top_bar']); ?>
+
+ 
+  </div>
   <header id="header" role="banner">
 
     <?php if ($logo): ?>

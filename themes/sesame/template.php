@@ -502,3 +502,18 @@ function zen_form_node_form_alter(&$form, &$form_state, $form_id) {
     }
   }
 }
+
+
+function sesame_form_alter(&$form, &$form_state, $form_id) {
+
+    if ($form_id == "user_login_block") {
+        //$form['links'] = Null; // Remove Request New Password and other links from Block form
+        //$form['links']['#markup'] = t('Forgotten Password?') . ' <a href="/user/password">' . t('Forgotten Password?') . '</a>'; // Remove Request New Password from Block form
+        $form['links']['#markup'] = ' <a class="user-register" href="/user/register">' . t('Register') . '</a>' . ' <a class="user-password" href="/user/password">' . t('Forgotten Password?') . '</a>'; // Remove Request New Password from Block form
+        $form['name']['#title'] = Null; // Change text on form
+        $form['name']['#attributes'] = array('placeholder' => t('username'));
+        $form['pass']['#title'] = Null;
+        $form['pass']['#attributes'] = array('placeholder' => t('password'));
+    }
+    }
+?>

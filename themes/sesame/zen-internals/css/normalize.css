@@ -461,7 +461,8 @@ ul,
 }
 
 .item-list ul li { /* Drupal override */
-  margin: 0;
+  float: left;
+  margin-left: 20px;
 }
 
 dd {
