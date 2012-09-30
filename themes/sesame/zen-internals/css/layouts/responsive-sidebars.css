@@ -76,7 +76,7 @@
     position: relative;
   }
 
-  #navigation {
+  #nnavigation {
     position: absolute;
     top: 0; /* Move the navbar up inside #main's padding. */
     height: 3em;
