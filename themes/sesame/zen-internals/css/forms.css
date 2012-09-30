@@ -10,6 +10,8 @@
 
 .form-item input {
 	float:left;
+	height: 20px;
+	margin-top: -15px;
 }
 .form-item textarea.error,
 .form-item select.error { /* Highlight the form elements that caused a form submission error */
@@ -23,6 +25,7 @@
   float: left;
   margin-left: 10px;
   margin-right: 2px;
+  margin-top: -15px;
 }
 
 .form-item label.option { /* The label for a radio button or checkbox */
@@ -45,6 +48,7 @@
 }
 
 .form-submit { /* The submit button */
+  margin-left: 10px;
 }
 
 .container-inline div,
@@ -83,7 +87,6 @@ a.button { /* Buttons used by contrib modules like Media */
 
 #user-login-form {
   text-align: left; /* LTR */
- 
 }
 
 /*

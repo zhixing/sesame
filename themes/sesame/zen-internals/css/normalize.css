@@ -462,7 +462,9 @@ ul,
 
 .item-list ul li { /* Drupal override */
   float: left;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: -15px;
+  
 }
 
 dd {
