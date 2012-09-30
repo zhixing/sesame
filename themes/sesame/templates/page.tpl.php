@@ -71,7 +71,7 @@
 ?>
 
 <div id="page">
-
+  <div class="top_bar"><?php print render($page['top_bar']); ?></div>
   <header id="header" role="banner">
 
     <?php if ($logo): ?>

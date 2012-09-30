@@ -1,4 +1,4 @@
-name        = Sesame
+﻿name        = Sesame
 core        = 7.x
 engine      = phptemplate
 
@@ -15,6 +15,7 @@ regions[footer]         = Footer
 regions[bottom]         = Page bottom
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
+regions[top_bar]	= Top bar
 
 settings[zen_breadcrumb]           = yes
 settings[zen_breadcrumb_separator] = ' › '
