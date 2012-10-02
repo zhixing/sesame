@@ -11,7 +11,7 @@
     $rendered = drupal_render($elements);
 
     // to see what you have to work with
-    print "<pre>ELEMENTS: " . print_r($elements,1) . "</pre>";
+    // print "<pre>ELEMENTS: " . print_r($elements,1) . "</pre>";
 
     $output  = '<form action="' . $elements['#action'] . 
                               '" method="' . $elements['#method'] . 
@@ -23,7 +23,7 @@
     $output .= $elements['form_build_id']['#children'];
     $output .= $elements['form_id']['#children'];
     $output .= $elements['actions']['#children'];
-    $output .= $elements['links']['#children'];
+    //$output .= $elements['links']['#children'];
     $output .= '</div></form>';
 
     print $output;

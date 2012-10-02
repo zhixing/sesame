@@ -2,7 +2,7 @@
 core        = 7.x
 engine      = phptemplate
 
-stylesheets[all][] = css/style.css
+
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
@@ -30,6 +30,8 @@ settings[zen_html5_respond_meta][] = html5
 settings[zen_html5_respond_meta][] = meta
 settings[zen_rebuild_registry]     = 0
 settings[zen_wireframes]           = 0
+
+stylesheets[all][] = css/style.css
 
 ; Information added by drupal.org packaging script on 2012-05-18
 version = "7.x-5.1"
