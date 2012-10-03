@@ -221,13 +221,19 @@ body {
  */
 
 a:link {
+	color:#CFF;
+	text-decoration:none;
 }
 
 a:visited {
+	color:#09F;
+	text-decoration:none;
 }
 
 a:hover,
 a:focus {
+	color:#FFF;
+	text-decoration:underline;
 }
 
 a:active {
