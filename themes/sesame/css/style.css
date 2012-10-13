@@ -1,6 +1,9 @@
 body{
 	background: #465055;
 }
+.inline{
+	position:relative;
+}
 #bgimg{
 	position:absolute;
 	background: url(../images/bg.png) repeat-x;
@@ -23,7 +26,13 @@ body{
 #header{
 	height:150px;
 }
+#main-menu{
+	position:relative;
+	top:10px;
+	height:40px;
+}
 #navigation{
+	background:url(../images/menu.png) no-repeat;
 	position:relative;
 	top:110px;
 	left:370px;
