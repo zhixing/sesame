@@ -88,9 +88,16 @@ body{
 	position:relative;
 	left:0;
 	width:960px;
+	height:1000px;
 	top:0px;
 	background:url(../images/content.png) repeat-y;
 }
 
 #footer{
+	position:absolute;
+	left:10px;
+	height:100px;
+	width:930px;
+	background:#0072B9;
+	z-index: 2;
 }

@@ -157,9 +157,12 @@
         <?php endif; ?>
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
+        
     </div><!-- /#content -->
 
-
+<div id="footer">
+  	         <?php print render($page['footer']); ?>
+        </div>
 
     <?php
       // Render the sidebars to see if there's anything in them.
@@ -173,10 +176,12 @@
         <?php print $sidebar_second; ?>
       </aside><!-- /.sidebars -->
     <?php endif; ?>
+   
 
   </div><!-- /#main -->
 
-  <?php print render($page['footer']); ?>
+
+ 
 
 </div><!-- /#page -->
 
