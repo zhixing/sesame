@@ -23,7 +23,7 @@
     $output .= $elements['form_build_id']['#children'];
     $output .= $elements['form_id']['#children'];
     $output .= $elements['actions']['#children'];
-    //$output .= $elements['links']['#children'];
+    $output .= $elements['links']['#children'];
     $output .= '</div></form>';
 
     print $output;
