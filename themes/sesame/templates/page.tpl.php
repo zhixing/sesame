@@ -83,6 +83,12 @@
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
     <?php endif; ?>
+   
+   	<a href="http://nus.edu.sg" target =_blank ><div id="logo1"> </div></a>
+   	<a href="http://www.zju.edu.cn/" target =_blank ><div id="logo2"> </div></a>
+   
+   	
+   
 
 <!-- /
     <?php if ($secondary_menu): ?>

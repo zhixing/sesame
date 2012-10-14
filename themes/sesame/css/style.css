@@ -55,6 +55,22 @@ body{
 	height:120px;
 	z-index:0;
 }
+#logo1{
+	position:absolute;
+	left:850px;
+	top:70px;
+	width: 190px;
+	height:95px;
+	background: url(../images/nuslogo.png);
+}
+#logo2{
+	position:absolute;
+	left:1060px;
+	top:70px;
+	width: 190px;
+	height:95px;
+	background: url(../images/zhedalogo.png) no-repeat;
+}
 #main{
 	padding-top:0;
 }
