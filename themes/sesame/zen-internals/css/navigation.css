@@ -59,7 +59,10 @@ li a.active {
 
 #navigation ul.links, /* Main menu and secondary menu links */
 #navigation ul.menu { /* Menu block links */
-  margin: 0;
+  position:absolute;
+  left:20px;
+  top:5px;
+  margin: 0px;
   padding: 0;
   text-align: left; /* LTR */
 }
