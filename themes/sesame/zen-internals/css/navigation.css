@@ -31,8 +31,16 @@ ul li.leaf {
  */
 
 li a.active {
-  color:#6FF;
-  text-shadow:#000 3px 3px 3px;
+  color:black;
+  text-shadow:#000 1px 1px 5px;
+}
+
+li a:link {
+	color:black;
+}
+
+li a:visited {
+	color:black;
 }
 
 /*
@@ -60,7 +68,7 @@ li a.active {
 #navigation ul.links, /* Main menu and secondary menu links */
 #navigation ul.menu { /* Menu block links */
   position:absolute;
-  left:20px;
+  left:25px;
   top:5px;
   margin: 0px;
   padding: 0;
@@ -69,8 +77,8 @@ li a.active {
 
 #navigation ul.links li,
 #navigation ul.menu li { /* A simple method to get navigation links to appear in one line. */
-  float: left; /* LTR */
-  padding: 0 10px 0 0; /* LTR */
+  /*float: left;  LTR */
+  padding: 0 25px 0 25px; /* LTR */
   list-style-type: none;
   list-style-image: none;
 }
