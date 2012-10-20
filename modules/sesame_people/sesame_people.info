@@ -1,0 +1,10 @@
+name = Sesame People
+description = For the sesame people page
+package = SESAME
+core = 7.x
+
+; Information added by drupal.org packaging script on 2012-09-06
+version = "7.x-1.x-dev"
+core = "7.x"
+
+

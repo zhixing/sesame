@@ -1,0 +1,45 @@
+<?php
+
+
+/**
+ * Implements hook_theme().
+ */
+function sesame_news_theme() {
+  return array(
+    'my_news' => array(
+      'template' => 'news',
+      'variables' => array('title' => NULL),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function sesame_news_menu() {
+  $items = array();
+ 
+  $items['sesame_news/news'] = array(
+    'title' => 'What\'s new?',
+    'page callback' => 'sesame_news_accordion',
+    'access callback' => TRUE,
+  );
+  return $items;
+}
+
+
+/**
+ * sesame_news_accordion implementation.
+ */
+function sesame_news_accordion() {
+  drupal_theme_rebuild();
+  $build['myelement'] = array(
+    '#theme' => 'my_news',
+  );
+  $build['myelement']['#attached']['library'][] = array('system', 'ui.accordion');
+
+  $build['myelement']['#attached']['js'][] = array('data' => '(function($){$(function() { $("#accordion").accordion(); })})(jQuery);', 'type' => 'inline');
+
+  $output = drupal_render($build);
+  return $output;
+}

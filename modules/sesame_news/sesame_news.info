@@ -1,0 +1,10 @@
+name = Sesame News
+description = For the sesame news page
+package = SESAME
+core = 7.x
+
+; Information added by drupal.org packaging script on 2012-09-06
+version = "7.x-1.x-dev"
+core = "7.x"
+
+

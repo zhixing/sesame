@@ -1,0 +1,69 @@
+<?php
+
+
+/**
+ * Implements hook_theme().
+ */
+function sesame_people_theme() {
+  return array(
+    'my_accordion' => array(
+      'template' => 'people',
+      'variables' => array('title' => NULL),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function sesame_people_menu() {
+  $items = array();
+ 
+  $items['sesame_people/people'] = array(
+    'title' => 'People',
+    'page callback' => 'sesame_people_accordion',
+    'access callback' => TRUE,
+  );
+  return $items;
+}
+
+
+/**
+ * sesame_news_accordion implementation.
+ */
+function sesame_people_accordion() {
+  $build['myelement'] = array(
+    '#theme' => 'my_accordion',
+  );
+
+  $build['myelement']['#attached']['library'][] = array('system', 'ui.accordion');
+  $build['myelement']['#attached']['js'][] = array('data' => '(function($){
+    $(function() { 
+      $("#people2").accordion({
+      }); 
+    })
+})(jQuery);',
+    'type' => 'inline');
+
+  $build['myelement']['#attached']['js'][] = array('data' => '(function($){
+    $(function() { 
+      $("#people1").accordion({
+      }); 
+    })
+})(jQuery);',
+    'type' => 'inline');
+    $build['myelement']['#attached']['js'][] = array('data' => '(function($){
+    $(function() { 
+      $("#people3").accordion({
+      }); 
+    })
+})(jQuery);',
+    'type' => 'inline');
+
+  $build['myelement']['#attached']['library'][] = array('system', 'ui.tabs');
+
+  $build['myelement']['#attached']['js'][] = array('data' => '(function($){$(function() { $("#tabs").tabs(); })})(jQuery);', 'type' => 'inline');
+  $output = drupal_render($build);
+  return $output;
+}
+
